@@ -1,0 +1,320 @@
+:root{
+  --main-color:#27ae60
+}
+body{
+  font-family: 'Poppins', sans-serif !important;
+}
+header{
+  height: 650px;
+  background-image: url(../media/header.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+.over-lay{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .8);
+}
+.navbar{
+  padding: 20px;
+  height: 80px;
+}
+.navbar-light .navbar-nav a.nav-link{
+  color: #000;
+  margin: 10px 15px;
+  position: relative;
+  transition: all .3s ease-in-out;
+  font-size: 15px;
+}
+.navbar-light .navbar-nav a.nav-link.active{
+  color:var(--main-color);
+}
+.navbar-light .navbar-nav a.nav-link.active::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--main-color);;
+}
+.navbar-light .navbar-nav a.nav-link::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--main-color);;
+  transition: all .3s ease-in-out;
+}
+.navbar-light .navbar-nav a.nav-link:hover{
+  color: var(--main-color);;
+}
+.navbar-light .navbar-nav a.nav-link:hover::before{
+  width: 100%;
+}
+header .hero{
+  transform: translateY(65%);
+  color: #fff;
+}
+header .hero .experince{
+  position: relative;
+  color: var(--main-color);
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight:  400;
+  display: inline-block;
+}
+header .hero .experince::before{
+  content: '';
+  position: absolute;
+  left: 110%;
+  top: 50%;
+  width: 150px;
+  height: 2px;
+  background-color: var(--main-color);
+}
+header .hero h2{
+  font-size: 45px;
+}
+button.apply{
+  all: unset;
+  margin-top: 30px;
+  font-size: 15px;
+  border: 1px solid;
+  padding: 10px 30px;
+  border-radius: 50px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+button.apply:hover{
+  background-color: var(--main-color);
+  color: #000;
+}
+header .track{
+  background-color: var(--main-color);
+  transform: translateY(50%);
+  padding: 20px;
+}
+header .track .shipment{
+  color: #fff;
+}
+header .track .shipment i{
+  font-size: 27px;
+  margin-right: 10px;
+}
+header .track .shipment h5{
+  font-size: 20px;  
+}
+input{
+  width: 100%;
+  height: 50px;
+  border: none;
+  padding-left: 15px;
+  background: #fff;
+  font-size: 15px;
+  outline: none;
+}
+textarea{
+  width: 100%;
+  border: none;
+  padding-left: 15px;
+  background: #fff;
+  font-size: 15px;
+  outline: none;
+}
+.track button{
+  all: unset;
+  font-size: 19px;
+  color: #000;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  padding:10px 60px;
+  background-color: #fff;
+  transition: .3s ease-in-out;
+}
+.track button:hover{
+  color: #fff;
+  background-color: transparent;
+}
+.about-us{
+  margin-top: 150px;
+}
+.head-text p{
+  max-width: 700px;
+  margin: auto;
+}
+.about-us .service .num{
+  font-size: 30px;
+  color: var(--main-color);
+}
+.service-calc{
+  margin-top: 100px;
+}
+.sub h5{
+  font-style: italic;
+  position: relative;
+  display: inline-block;
+  color: var(--main-color);
+}
+.sub h5::before{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -120px;
+  width: 100px;
+  height: 2px;
+  background-color: var(--main-color);
+}
+.sub h5::after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -120px;
+  width: 100px;
+  height: 2px;
+  background-color: var(--main-color);
+}
+input.input,
+textarea.input{
+  margin-top: 20px;
+  border: 2px solid #ccc;
+  transition: .3s ease-in-out;
+}
+input.input:hover,
+input.input:focus,
+textarea.input:hover,
+textarea.input:focus{
+  border-color: var(--main-color);
+}
+.fields .total span{
+  font-size: 20px;
+}
+.fields .total span:last-of-type{
+  color: var(--main-color);
+}
+.benfits{
+  margin-top: 100px;
+  background-image: url(../media/header.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  color: #fff;
+  padding: 50px 0;
+}
+.benfits .benfit-icon i{
+  border: 2px solid var(--main-color);
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  border-radius: 50%;
+  margin-right: 10px;
+  font-size: 30px;
+  line-height: 80px;
+  transition: .3s ease-in-out;
+}
+.benfits .benfit-icon i:hover{
+  background-color: var(--main-color);
+  color: #000;
+}
+.benfits .benfit-content span{
+  font-size:14px;
+}
+.employment{
+  margin-top: 100px;
+  padding: 50px;
+  background-color: #ddd;
+}
+.employment .employ-content .apply{
+  background-color: var(--main-color);
+  border-color: var(--main-color);
+  color: #fff;
+}
+.employment .employ-content .apply:hover{
+  background-color: #ddd;
+  color: #000;
+  border-color: #000;
+}
+.counting{
+  background-image: url(../media/plane.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 50px 0;
+  margin-top: 100px;
+  position: relative;
+}
+.counter-container{
+  color: #fff;
+}
+.counter-container i{
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  background-color: var(--main-color);
+  color: #fff;
+  font-size: 30px;
+  border-radius: 50%;
+}
+.counter-container h3{
+  font-size: 55px;
+}
+.counter-container h4{
+  font-size: 20px;
+}
+.contact{
+  margin-top: 100px;
+}
+.contact .contact-info i{
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  color: #fff;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.contact button{
+  all: unset;
+  background-color: var(--main-color);
+  padding: 10px 25px;
+  color: #fff;
+  margin-top: 20px;
+}
+footer{
+  margin-top: 100px;
+  background-color: #010101;
+  color: #ddd;
+  text-align: center;
+  font-weight: lighter;
+  height: 100px;
+  line-height: 100px;
+  position: relative;
+}
+footer .top-btn{
+  position: absolute;
+  right: 50px;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: var(--main-color);
+  color: #fff;
+  font-size: 25px;
+}
